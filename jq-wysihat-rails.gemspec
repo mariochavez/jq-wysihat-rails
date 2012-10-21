@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Jq::Wysihat::Rails::VERSION
   gem.authors       = ["Mario A Chavez"]
   gem.email         = ["mario.chavez@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Use jq Whysihat with Rail 3}
+  gem.summary       = %q{This gem provides jq Wysihat ready to be used with Rails 3}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
