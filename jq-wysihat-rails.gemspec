@@ -1,19 +1,21 @@
-# -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'jq-wysihat-rails/version'
+$:.push File.expand_path("../lib", __FILE__)
 
-Gem::Specification.new do |gem|
-  gem.name          = "jq-wysihat-rails"
-  gem.version       = Jq::Wysihat::Rails::VERSION
-  gem.authors       = ["Mario A Chavez"]
-  gem.email         = ["mario.chavez@gmail.com"]
-  gem.description   = %q{Use jq Whysihat with Rail 3}
-  gem.summary       = %q{This gem provides jq Wysihat ready to be used with Rails 3}
-  gem.homepage      = ""
+# Maintain your gem's version:
+require "jq-wysihat-rails/version"
 
-  gem.files         = `git ls-files`.split($/)
-  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.require_paths = ["lib"]
+# Describe your gem and declare its dependencies:
+Gem::Specification.new do |s|
+  s.name        = "jq-wysihat-rails"
+  s.version     = JqWysihatRails::VERSION
+  s.authors     = ["Mario A Chavez"]
+  s.email       = ["mario.chavez@gmail.com"]
+  s.homepage    = "TODO"
+  s.summary     = "jq-wysihat html editor ready to be used on a Rails Application"
+  s.description = "This gem provides jq-wysihat html editor ready to be used on Rails 3 applications"
+
+  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+
+  s.add_dependency "rails", "~> 3.2.8"
+
+  s.add_development_dependency "sqlite3"
 end
