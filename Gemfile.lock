@@ -49,6 +49,10 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.19)
+    minitest (3.5.0)
+    minitest-rails (0.2)
+      minitest (~> 3.4)
+      rails (~> 3.0)
     multi_json (1.3.6)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -94,4 +98,5 @@ PLATFORMS
 DEPENDENCIES
   jq-wysihat-rails!
   jquery-rails
+  minitest-rails
   sqlite3
