@@ -1,12 +1,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "jq-wysihat-rails/version"
+require File.expand_path('../lib/wysihat/rails/version', __FILE__)
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "jq-wysihat-rails"
-  s.version     = JqWysihatRails::VERSION
+  s.version     = Jq::Wysihat::Rails::VERSION
   s.authors     = ["Mario A Chavez"]
   s.email       = ["mario.chavez@gmail.com"]
   s.homepage    = "TODO"

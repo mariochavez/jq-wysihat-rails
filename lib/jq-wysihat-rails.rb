@@ -1,2 +1,1 @@
-module JqWysihatRails
-end
+require 'wysihat/rails'
