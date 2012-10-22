@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require wysihat
-//= require_tree .
+//= require_self
+
+$(function() {
+  $('#test_content').wysihat();
+});

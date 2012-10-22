@@ -1,0 +1,78 @@
+$gray: #acacac;
+$grayer: #cccccc;
+$grayLigth: #ececec;
+
+$width: 520px;
+
+.editor {
+  clear: both;
+  min-height: 100px;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid $gray;
+  outline: none;
+  font-family: 'Lucida Grande', verdana, arial, sans-serif;
+  font-size: 12px;
+  overflow: scroll;
+  width: $width;
+  height: 200px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.editor_toolbar {
+  width: $width;
+  background-color: $grayLigth;
+
+  .toolbar_button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid transparent;
+    display: inline-block;
+
+    &:hover {
+      border: 1px solid white;
+      background-color: $grayer;
+    }
+
+    &.selected {
+      background-color: $grayer;
+      border: 1px solid white;
+    }
+
+    span {
+      width: 31px;
+      height: 31px;
+      text-indent: -9999px;
+      display: block;
+    }
+
+    &.bold {
+      span {
+        background: url('glyphicons_102_bold.png') no-repeat 7px 4px;
+      }
+    }
+
+    &.italic {
+      span {
+        background: url('glyphicons_101_italic.png') no-repeat 10px 4px;
+      }
+    }
+  }
+
+  .tool {
+    float: left;
+    margin: 2px 5px;
+  }
+
+  .selected {
+    color: red !important;
+  }
+}
+
+#error {
+  font: 18px helvetica, arial, sans-serif;
+  color: red;
+}
