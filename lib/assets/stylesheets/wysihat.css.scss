@@ -26,7 +26,7 @@ $width: 520px;
   width: $width;
   background-color: $grayLigth;
 
-  .toolbar_button {
+  .button {
     width: 32px;
     height: 32px;
     border: 1px solid transparent;
@@ -58,6 +58,24 @@ $width: 520px;
     &.italic {
       span {
         background: url('glyphicons_101_italic.png') no-repeat 10px 4px;
+      }
+    }
+
+    &.underline {
+      span {
+        background: url('glyphicons_103_text_underline.png') no-repeat 6px 4px;
+      }
+    }
+
+    &.strikethrough {
+      span {
+        background: url('glyphicons_104_text_strike.png') no-repeat 6px 4px;
+      }
+    }
+
+    &.insertunorderedlist {
+      span {
+        background: url('glyphicons_114_list.png') no-repeat 4px 6px;
       }
     }
   }

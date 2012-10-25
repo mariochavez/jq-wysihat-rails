@@ -14,7 +14,3 @@
 //= require jquery_ujs
 //= require wysihat
 //= require_self
-
-$(function() {
-  $('#test_content').wysihat();
-});
